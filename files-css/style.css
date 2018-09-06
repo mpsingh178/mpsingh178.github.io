@@ -1,0 +1,513 @@
+* {
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    background-color: skyblue;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background-color: #16c9;
+    color: #fff;
+    box-shadow: 0px 4px 6px gray;
+
+    min-height: 70px;
+    width: 100vw;
+    position: fixed;
+}
+
+header #left {
+    float: left;
+    display: inline;
+}
+
+header .container {
+    min-height: 70px;
+}
+
+header h1 {
+    margin: auto;
+    padding: 10px;
+}
+
+header nav {
+    float: right;
+    display: inline-block;
+    height: 70px;
+}
+
+section {
+    padding-top: 100px;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+header ul {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+header li {
+    height: 100%;
+    display: inline-block;
+    padding: 20px;
+    background-color: #16c6;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+header li>a {
+    height: 100%;
+    padding: 10px;
+    display: block;
+    text-shadow: 1px 2px 6px gray;
+    text-decoration: none;
+    color:white;
+}
+
+header li:hover {
+    background-color: gray;
+}
+
+
+/*------------------------------------------------------ About -----------------------------------------------------------------------------------*/
+
+#about {
+    background: url(https://images.pexels.com/photos/250400/pexels-photo-250400.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+#about .container {
+    margin-top: 130px;
+    background-color: #16c5;
+    width: 50vw;
+    height: 30vw;
+    border-radius: 5%;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#about .container .left-text {
+    flex: 1;
+    align-self: center;
+    color: white;
+    padding: 20px;
+}
+
+#about .container .short {
+    display: none;
+}
+
+#about .container .left-text h1 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#about .container .left-text > p {
+    font-size: 23px;
+    font-weight: bold;
+    color:white;
+}
+
+#about .container img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    align-self: center;
+    flex: 1;
+    box-shadow: 2px 2px 6px orange;
+    padding: 20px;
+}
+
+
+
+/* --------------------------------------------------------------------------  Boxes ----------------------------------------------------------------------------------*/
+
+#boxes {
+    background-image: url(https://t4.ftcdn.net/jpg/00/88/18/55/240_F_88185540_anx8wKsKxFHzoNJTL9nZLa1MNwg2VBIv.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#boxes .container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    /*Make the grid smaller than the container*/
+    grid-gap: 10px;
+    padding: 150px;
+    min-height: 60vh;
+}
+
+#boxes .box {
+    float: left;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    background-color: #16c5;
+    border: 1px solid gray;
+    box-shadow: 2px 2px 6px gray;
+}
+
+#boxes .box .img {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 15vh;
+    width: 15vh;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+#boxes .box p {
+    size: 20rem;
+    font-weight: bold;
+    color: orange;
+}
+
+#boxes .box #java-img {
+    background-image: url("https://as1.ftcdn.net/jpg/01/58/20/76/500_F_158207634_V0gszzZrJZKyX97zDF3Hgs78BfoxUtUq.jpg");
+}
+
+#boxes .box #css-img {
+    background-image: url("https://t3.ftcdn.net/jpg/01/38/39/10/240_F_138391006_ybQu6iAo4WmuAR8tTLV3qngMMwzCvjJk.jpg");
+}
+
+#boxes .box #html-img {
+    background-image: url("https://t3.ftcdn.net/jpg/01/38/99/28/240_F_138992836_ptbVgGAAGmm0YxjqLUKEmRlnSicnu9wZ.jpg");
+}
+
+#boxes .box #python-img {
+    background-image: url("https://t3.ftcdn.net/jpg/01/00/09/74/240_F_100097456_VgnVtsCsjfE09UAKOT22IxQh4t0R97vV.jpg");
+}
+
+#boxes .box #sql-img {
+    background-image: url("https://t4.ftcdn.net/jpg/01/40/11/45/240_F_140114565_wLxhFblb2RwqyjXMKAat5l4z3e3lQkEC.jpg");
+}
+
+
+.box-head,
+.box-python {
+    grid-column: 1/-1;
+}
+
+.box-html,
+.box-css,
+.box-java {
+    grid-column: span 2;
+}
+
+.box-sql,
+.box-python {
+    grid-column: span 3;
+}
+
+.box-head h1 {
+    font-size: 50px;
+    color: white;
+    text-shadow: 2px 2px 6px gray;
+}
+/* --------------------------------------------------------------- Projects ------------------------------------------------------------------------*/
+
+
+#projects-boxes {
+    background-image: url(https://images.pexels.com/photos/92628/pexels-photo-92628.jpeg?auto=compress&cs=tinysrgb&h=350);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#projects-boxes .container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+#projects-boxes .container .box{
+    float:left;
+    border:2px solid gray;
+    background-color:#16c9;
+    text-align: center;
+    color:white;
+}
+
+#projects-boxes .project-head{
+  padding-top: 20px;
+  grid-column:span 4;
+  height:80px;
+}
+
+#projects-boxes .project-html{
+  padding-top: 50px;
+  color:white;
+  grid-column:span 2;
+
+}
+
+#projects-boxes .project-python{
+  padding-top: 50px;
+  color:white;
+  grid-column:span 2;
+
+}
+
+#projects-boxes p{
+  font-size: 30px;
+}
+
+#projects-boxes .project-head > h1{
+  font-size: 50px;
+}
+
+/*-------------------------------------------------------- Sub-Footer ------------------------------------------------------------------------------*/
+
+#footer-boxes {
+    background-image: url(https://images.pexels.com/photos/267389/pexels-photo-267389.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#footer-boxes .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 80px 200px;
+    grid-gap: 3px;
+    padding: 12px;
+    min-height: 60vh;
+}
+
+#footer-boxes .box {
+    float: left;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    background-color: #16c9;
+    border: 1px solid gray;
+    box-shadow: 2px 2px 6px gray;
+}
+
+#footer-boxes .text-box, .social-box {
+    grid-column: span 4;
+}
+
+#footer-boxes .social-box ul {
+    display: flex;
+    justify-content: center;
+}
+
+#footer-boxes .social-box ul li {
+    list-style-type: none;
+}
+
+#footer-boxes .text-box p {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+}
+
+
+/* --------------------------------------------- social media icons -------------------------------------------------- */
+
+.social-icon {
+    font-size: 30px;
+    color: red;
+}
+
+ul.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.fa-facebook {
+    padding: 10px 14px;
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+
+.fa-facebook:hover {
+    background-color: #3d5b99;
+}
+
+.fa-twitter {
+    padding: 10px 12px;
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+
+.fa-twitter:hover {
+    background-color: #00aced;
+}
+
+.fa-linkedin {
+    padding: 10px 14px;
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+
+.fa-linkedin:hover {
+    background-color: #0073a4;
+}
+
+
+
+
+/*----------------------------------------------------FOOTER section----------------------------------------------------------------------------*/
+
+footer {
+    max-width: 100%;
+    padding: 30px;
+    color: #ffffff;
+    background-color: #e8491d;
+    opacity: .8;
+    text-align: center;
+    font-size: 25px;
+}
+
+
+/*---------------------------------------------------- End ------------------------------------------------------------------------------------*/
+
+
+/* ---------------------------------------------------Media Queries-----------------------------------------------------------------------------*/
+
+@media(max-width: 768px) {
+    header #left,
+    header nav,
+    header nav li {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    header {
+        position: relative;
+    }
+
+    #boxes {
+        height: auto;
+    }
+    #boxes .box {
+        float: none;
+        width: 100vw;
+    }
+
+    #boxes .container {
+        padding: 0;
+    }
+    .container {
+        min-height: 70px;
+        width: 100%;
+    }
+
+    #about {
+        height: 50vh;
+        padding: 0px;
+    }
+
+    #about .container .left-text {
+        order: 2;
+    }
+
+    #about .container .right-image {
+        order: 1;
+    }
+
+    #about .container {
+        padding: 40px;
+        margin-top: 10px;
+        width: 80vw;
+        height: 100vh;
+        border-radius: 5%;
+    }
+
+    #about .container .long {
+        display: none;
+    }
+
+    #about .container .short {
+        display: block;
+    }
+    #footer-boxes .social-box{
+      padding: 0;
+    }
+
+
+    #footer-boxes .social-box ul{
+      padding: 0;
+      display:flex;
+      flex-direction:column;
+      width:100%;
+      height: 100%;
+      margin: 0;
+    }
+    #footer-boxes .social-box ul li{
+      width:100%;
+    }
+    #footer-boxes .social-box ul li a{
+      display: inline-block;
+      width:100%;
+    }
+    #footer-boxes .social-box ul li a i{
+      display: inline-block;
+      padding: 0;
+      width:100%;
+      height: 100%;
+    }
+}
+
+@media(max-width: 768px) {
+    #boxes .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+  #projects-boxes .container{
+    display:flex;
+    flex-direction: column;
+  }
+
+  #projects-boxes .container h1{
+    font-size: auto;
+  }
+
+  #projects-boxes .container .project-head > h1{
+    font-size: 8vw;
+  }
+}
+
+
+/* ---------------------------------------------------Media Queries Ends-----------------------------------------------------------------------------*/
